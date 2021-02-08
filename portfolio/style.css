@@ -1,0 +1,161 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-yellow: #dfc043;
+
+  /* Font Size */
+  --font-large: 77px;
+  --font-medium: 45px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Border Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Unniversal tag */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: var(--weight-semi-bold);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  margin: 0;
+}
+
+p {
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  width: 200px;
+  height: 200px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 0 17px;
+  margin: 0 5px;
+}
+
+.navbar__menu__item a {
+  color: var(--color-black);
+}
+
+.navbar__menu__item a:hover {
+  color: var(--color-dark-yellow);
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.home__title {
+  font-size: var(--font-large);
+  transition: var(--animation-duration);
+}
+
+.home__title:hover {
+  color: var(--color-dark-yellow);
+  transition: all var(--animation-duration);
+}
+
+.home__name {
+  color: var(--color-black);
+}
+
+.home__description {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: var(--color-white);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.home__description:hover {
+  text-shadow: -1px 0 #dfc043, 0 1px #dfc043, 1px 0 #dfc043, 0 -1px #dfc043;
+}
+
+.home__btn {
+  padding: 12px;
+  border-radius: 50px;
+  background-color: var(--color-dark-yellow);
+}
+
+.home__down {
+  padding: 150px 0;
+  font-size: var(--font-medium);
+  color: var(--color-dark-yellow);
+}
+
+/* common ground */
+.section {
+  text-align: center;
+  margin: auto;
+}
+/* Work */
+#work {
+  background-color: var(--color-dark-yellow);
+}
