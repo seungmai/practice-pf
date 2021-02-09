@@ -70,6 +70,7 @@ h3 {
 p {
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
+  margin: 0;
 }
 
 /* Navbar */
@@ -96,6 +97,7 @@ p {
 }
 
 .navbar__menu__item {
+  font-size: var(--font-regular);
   padding: 0 17px;
   margin: 0 5px;
 }
@@ -106,12 +108,15 @@ p {
 
 .navbar__menu__item a:hover {
   color: var(--color-dark-yellow);
+  transition: var(--animation-duration);
 }
 
 /* Home */
 #home {
+  background: url(/image/background.png) no-repeat 0 0;
+  background-size: 100% 100%;
   text-align: center;
-  padding: 120px 0;
+  padding: 172px 0;
 }
 
 .home__title {
@@ -131,11 +136,15 @@ p {
 .home__description {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: var(--color-white);
-  transition: all var(--animation-duration) ease-in;
+  transition: all var(--animation-duration);
 }
 
 .home__description:hover {
   text-shadow: -1px 0 #dfc043, 0 1px #dfc043, 1px 0 #dfc043, 0 -1px #dfc043;
+}
+
+.home__more {
+  margin: 36px 0 0;
 }
 
 .home__btn {
@@ -145,9 +154,17 @@ p {
 }
 
 .home__down {
-  padding: 150px 0;
+  padding: 120px 0 0;
   font-size: var(--font-medium);
   color: var(--color-dark-yellow);
+}
+
+.home__down i {
+  transition: var(--animation-duration) ease;
+}
+
+.home__down:hover i {
+  transform: scale(1.3);
 }
 
 /* common ground */
@@ -156,6 +173,13 @@ p {
   margin: auto;
 }
 /* Work */
-#work {
+.work {
   background-color: var(--color-dark-yellow);
+}
+
+.work__bar {
+  width: 10%;
+  height: 4px;
+  background-color: #f4f3ee;
+  margin: 10px auto;
 }
