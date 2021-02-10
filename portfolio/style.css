@@ -177,9 +177,83 @@ p {
   background-color: var(--color-dark-yellow);
 }
 
+.work__featured {
+  padding: 50px 0 0 0;
+}
+
 .work__bar {
   width: 10%;
   height: 4px;
   background-color: #f4f3ee;
-  margin: 10px auto;
+  margin: 30px auto;
+}
+
+.work__projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  border-radius: 30px;
+  margin: 3px;
+  background-color: azure;
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
+
+.project__description h3 {
+  font-size: 30px;
+}
+
+/* CONNECT */
+#connect {
+  background-color: #0f123b;
+}
+
+.connect__title,
+.connect__email,
+.connect__description {
+  color: var(--color-white);
+}
+
+.connect__title {
+  font-size: 35px;
+}
+
+.connect__email {
+  font-size: 20px;
+  padding: 10px 0 0;
+}
+
+.connect__email span {
+  color: var(--color-dark-yellow);
+}
+
+.connect__links {
+  font-size: 30px;
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+.connect__links a {
+  color: var(--color-white);
+}
+
+.connect__links a:hover {
+  color: var(--color-dark-yellow);
+  transition: var(--animation-duration);
+}
+
+.connect__links i {
+  background-color: #4f4e5f;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.connect__links i:hover {
+  transform: scale(1.1);
 }
