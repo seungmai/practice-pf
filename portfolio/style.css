@@ -209,20 +209,16 @@ p {
 
 .project {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 450px;
   border-radius: 30px;
   margin: 20px;
-  background-color: #eeeeee;
-  box-shadow: 5px 5px #d9d9d9;
-  transition: var(--animation-duration);
-}
-
-.project:hover {
   transform: scale(1.05);
+  box-shadow: 6px 5px #404040;
+  background-color: var(--color-white);
 }
 
 .project__img {
@@ -232,8 +228,8 @@ p {
   background-color: hsl(50, 18%, 73%);
   margin-bottom: 50px;
   border-radius: 30px;
-  width: 90%;
-  height: 50%;
+  width: 95%;
+  height: 60%;
 }
 
 .project__description {
@@ -274,11 +270,6 @@ p {
   color: var(--color-dark-yellow);
   background-color: gray;
   margin: 10px 0;
-}
-
-.project__description-main {
-  display: flex;
-  justify-content: center;
 }
 
 /* CONNECT */
