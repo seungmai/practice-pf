@@ -98,8 +98,8 @@ p {
 
 .navbar__menu__item {
   font-size: var(--font-regular);
-  padding: 0 17px;
-  margin: 0 5px;
+  padding: 17px;
+  margin: 5px;
 }
 
 .navbar__menu__item a {
@@ -118,6 +118,10 @@ p {
   font-size: 24px;
   color: var(--color-dark-yellow);
   display: none;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 /* Home */
@@ -185,13 +189,23 @@ p {
   margin: auto;
 }
 
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Work */
-.work {
+#work {
   background-color: #caac34;
 }
 
 .work__featured {
-  padding-top: 100px;
+  padding-top: 30px;
+  font-size: var(--font-medium);
+}
+
+.work p {
+  margin-bottom: 10px;
 }
 
 .work__bar {
@@ -204,8 +218,8 @@ p {
 
 .work__projects {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
@@ -350,18 +364,18 @@ p {
 
   .navbar__toggle-btn {
     display: block;
-    top: 16px;
-    right: 16px;
+    top: 40px;
+    right: 13px;
     font-size: var(--font-medium);
   }
 
   #navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: var(--color-white);
   }
 
-  #navbar__menu {
+  .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
