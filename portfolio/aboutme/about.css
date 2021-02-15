@@ -126,7 +126,7 @@ p {
 
 /* Home */
 #home {
-  background: url(/image/frontend\ background.png) no-repeat 0;
+  background: url(/image/background\(2\).png) no-repeat 0;
   background-size: 100% 100%;
   text-align: center;
   padding: 100px;
@@ -276,18 +276,19 @@ p {
 
 /* CONNECT */
 #connect {
-  background-color: #0f123b;
+  background: url(/image/background\(3\).png);
+  background-size: 100% 100%;
 }
 
 .connect__title,
 .connect__email,
 .connect__description {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .connect__title {
   font-size: 35px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .connect__email {
@@ -325,4 +326,34 @@ p {
 
 .connect__description {
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-large: 50px;
+    --font-medium: 38px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+    top: 40px;
+    right: 13px;
+    font-size: var(--font-medium);
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-white);
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
 }

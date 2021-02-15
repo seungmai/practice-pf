@@ -23,12 +23,6 @@ navbarMenu.addEventListener('click', (event) => {
     selectNavItem(target);
 });
 
-const navbar = document.querySelector('.navbar');
-navbar.addEventListener('click', () =>{
-    const target = event.target;
-    const link = target.dataset.link;
-})
-
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height; 
 document.addEventListener('scroll', () => { 
