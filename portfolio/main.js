@@ -28,3 +28,10 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => { 
     home.style.opacity = 1 - window.scrollY / homeHeight; 
 });
+
+const work = document.querySelector('.work__container');
+work.addEventListener('click', () => {
+    console.log('.work');
+    const target = target.link;
+    const work = target.event;
+}
