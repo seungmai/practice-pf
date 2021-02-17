@@ -75,11 +75,19 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
+  z-index: 1;
+  transition: var(--animation-duration);
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-white);
+  padding: 2px;
 }
 
 .navbar__logo {
@@ -126,18 +134,22 @@ p {
 
 /* Home */
 #home {
-  background: url(/image/background.png) no-repeat 0 0;
+  background: url(/image/background.png);
   background-size: 100% 100%;
   text-align: center;
   padding: 172px 0;
+  padding-top: 300px;
   background-attachment: fixed;
   background-position: center;
+  background-position: 0 100px;
   background-repeat: no-repeat;
+  padding-bottom: 173px;
 }
 
 .home__title {
   font-size: var(--font-large);
   transition: var(--animation-duration);
+  padding-top: 100px;
 }
 
 .home__title:hover {
@@ -175,6 +187,11 @@ p {
   color: var(--color-dark-yellow);
 }
 
+.home__down.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .home__down i {
   transition: var(--animation-duration) ease;
 }
@@ -189,7 +206,7 @@ p {
   margin: auto;
 }
 
-.section__container {
+.work__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -197,6 +214,48 @@ p {
 /* Work */
 #work {
   background-color: #caac34;
+}
+
+.section__container {
+  padding: 40px;
+}
+
+.category__btn {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+  position: relative;
+  cursor: pointer;
+}
+
+.category__btn.selected,
+.category__btn:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
+  background-color: #0f123b;
+}
+
+.category__btn.selected .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  margin-top: 6px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-black);
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .work__featured {
@@ -234,6 +293,10 @@ p {
   margin-top: 30px;
   background-color: var(--color-white);
   box-shadow: 5px 5px 7px #333;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project:hover {
@@ -380,5 +443,14 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .home__title {
+    padding: 150px 0 0 0;
+  }
+
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
   }
 }

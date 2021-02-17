@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e00bf7e164.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -46,7 +46,7 @@
                 </h2> 
             </h1>
             <div class="home__more">
-                <a href="#" class="home__btn">Learn More
+                <a href="http://127.0.0.1:5500/portfolio/aboutme/about.html" class="home__btn">Learn More
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
@@ -64,8 +64,22 @@
                 <div class="work__bar">
                 </div>
                 <p>Check out some of my best projects in different areas!</p>
+                <div class="work__categories">
+                    <button class="category__btn selected" data-filter="*">
+                        All <span class="category__count">6</span>
+                    </button>
+                    <button class="category__btn" data-filter="front-end">
+                        Front-end <span class="category__count">2</span>
+                    </button>
+                    <button class="category__btn" data-filter="back-end">
+                        Back-end <span class="category__count">2</span>
+                    </button>
+                    <button class="category__btn" data-filter="mobile">
+                        Mobile <span class="category__count">2</span>
+                    </button>
+                </div>
                 <div class="work__projects">
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="front-end">
                         <img src="/image/project-img/project1.png" alt="1" class="project__img">
                         <div class="project__description">
                             <h3>FRONT-END DEVELOPMENT</h3>
@@ -75,7 +89,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="front-end">
                         <img src="/image/project-img/project2.jpg" alt="2" class="project__img">
                         <div class="project__description">
                             <h3>FRONT-END DEVELOPMENT</h3>
@@ -85,7 +99,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="back-end">
                         <img src="/image/project-img/project3.png" alt="3" class="project__img">
                         <div class="project__description">
                             <h3>FRONT-END DEVELOPMENT</h3>
@@ -95,7 +109,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="back-end">
                         <img src="/image/project-img/project4.png" alt="4" class="project__img">
                         <div class="project__description">
                             <h3>Ui/UX DESIGN</h3>
@@ -105,7 +119,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="mobile">
                         <img src="/image/project-img/project5.png" alt="5" class="project__img">
                         <div class="project__description">
                             <h3>GRAPHIC DESIGN</h3>
@@ -115,7 +129,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="#" class="project" target="blank">
+                    <a href="#" class="project" target="blank" data-type="mobile">
                         <img src="/image/project-img/project6.png" alt="6" class="project__img">
                         <div class="project__description">
                             <h3>Ui/UX DESIGN</h3>
