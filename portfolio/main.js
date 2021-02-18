@@ -13,6 +13,16 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open'); 
+    navbarMenu.addEventListener('click', () => {
+        navbarMenu.classList.remove('open');
+    });
+});
+
 // Make home slowly fade to transparant as the window scrolls down(home을 scroll하면 투명하게!)
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
@@ -23,27 +33,31 @@ document.addEventListener('scroll', () => {
 // Projects
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
-const projects = document.querySelector('.project');
+const projects = document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e) => {
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
     if(filter == null) {
         return;
     }
 
-    const active = document.querySelector('.categoty__btn selected');
-    active.classList.remove('selected');
-    const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
-    target.classList.add('selected');
+// Remove selection from the previous item and select the new one
+const active = document.querySelector('.category__btn.selected');
+active.classList.remove('selected'); 
+const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode; 
+target.classList.add('selected'); 
 
-    console.log(filter);
-    projects.forEach((project) => {
-        console.log(project.dataset.type);
-        if(filter === '*' || filter === project.dataset.type) {
-            project.classList.remove('invisible');
-        } else {
-            project.classList.add('invisible');
-        }
-    });
+    projectContainer.classList.add('anim-out');
+    setTimeout(() => {
+        projects.forEach((project) => {
+            console.log(project.dataset.type);
+            if(filter === '*' || filter === project.dataset.type) {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 300);
 });
 
 // 우리기 정의한 유틸리티 함수!
