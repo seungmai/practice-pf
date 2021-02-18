@@ -30,6 +30,26 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+const homeBtn = document.querySelector('.home__down');
+homeBtn.addEventListener('click', () => {
+    scrollIntoView('#work');
+});
+
+// Show "arrow up" button when scrolling down(스크롤이 내렬갈 때 버튼이 생기게 하는 것!)
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => { 
+    if (window.scrollY > homeHeight / 2) { 
+        arrowUp.classList.add('visible'); 
+    } else {
+        arrowUp.classList.remove('visible');  
+    }
+});
+
+// Handle click on the "arrow up" button(스크롤을 누르면 home화면으로 이동!)
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
+
 // Projects
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
