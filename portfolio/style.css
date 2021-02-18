@@ -93,7 +93,6 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-white);
   padding: 2px;
 }
 
@@ -119,11 +118,11 @@ p {
 
 .navbar__menu__item a {
   color: var(--color-black);
+  transition: var(--animation-duration);
 }
 
 .navbar__menu__item a:hover {
   color: var(--color-dark-yellow);
-  transition: var(--animation-duration);
 }
 
 .navbar__toggle-btn {
@@ -134,6 +133,7 @@ p {
   color: var(--color-dark-yellow);
   background-color: var(--color-white);
   display: none;
+  transform: translate(0);
 }
 
 /* Home */
