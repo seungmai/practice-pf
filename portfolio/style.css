@@ -27,11 +27,11 @@
 /* Unniversal tag */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  margin: 0;
 }
 
 a {
@@ -485,10 +485,14 @@ p {
   }
 
   .navbar__menu {
+    position: relative;
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+    border-top: 3px solid var(--color-dark-yellow);
+    top: 55px;
+    transition: all var(--animation-duration);
   }
 
   .navbar__menu.open {
