@@ -85,3 +85,13 @@ function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
 };
+
+function openMobileNavar() {
+    navbar.classList.add('opened');
+    navbarToggle.setAttribute('aria-label', 'close navigation menu.');
+} 
+
+function closeMobileNavbar() {
+    navbar.classList.remove("opened");
+    navbarToggle.setAttribute("aria-label", "Open navigation menu.");
+  }
