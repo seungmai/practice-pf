@@ -224,7 +224,7 @@ p {
 
 /* Work */
 #work {
-  background-color: #caac34;
+  background-color: #8c944c;
 }
 
 .section__container {
@@ -490,8 +490,8 @@ p {
     text-align: center;
     width: 100%;
     display: none;
-    border-top: 3px solid var(--color-dark-yellow);
-    top: 55px;
+    border-top: 3px solid #8c944c;
+    top: 53px;
     transition: all var(--animation-duration);
   }
 
