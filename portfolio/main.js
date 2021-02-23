@@ -80,6 +80,13 @@ target.classList.add('selected');
     }, 300);
 });
 
+// 펭귄 움직이기 버전
+const home = document.querySelector('#home')
+const url = document.querySelector('.home')
+document.addEventListener('scroll', (e) =>{
+    console.log(home);
+})
+
 // 우리기 정의한 유틸리티 함수!
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
