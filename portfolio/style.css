@@ -272,6 +272,13 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
+.work__img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  transition: var(--animation-duration);
+}
+
 .work__featured {
   padding-top: 30px;
   color: var(--color-white);
