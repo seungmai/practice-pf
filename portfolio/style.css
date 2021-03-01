@@ -103,10 +103,9 @@ p {
   display: flex;
   align-items: center;
 }
-
-.navbar__logo img {
-  width: 100px;
-  height: 100px;
+.navbar__logo i {
+  font-size: 50px;
+  color: #f17f23;
 }
 
 .navbar__menu {
@@ -140,7 +139,7 @@ p {
 
 /* Home */
 #home {
-  background: url(/image/background.png);
+  background: url();
   background-size: 100% 100%;
   text-align: center;
   padding: 172px 0;
@@ -150,6 +149,7 @@ p {
   background-position: 0 100px;
   background-repeat: no-repeat;
   padding-bottom: 173px;
+  background-color: var(--color-black);
 }
 
 .home__title {
@@ -160,7 +160,7 @@ p {
 }
 
 .home__title:hover {
-  color: var(--color-dark-yellow);
+  color: #f17f23;
   transition: all var(--animation-duration);
 }
 
@@ -175,7 +175,7 @@ p {
 }
 
 .home__description:hover {
-  text-shadow: -1px 0 #dfc043, 0 1px #dfc043, 1px 0 #dfc043, 0 -1px #dfc043;
+  text-shadow: -1px 0 #f17f23, 0 1px #f17f23, 1px 0 #f17f23, 0 -1px #f17f23;
 }
 
 .home__more {
@@ -183,7 +183,7 @@ p {
 }
 
 .home__more a:hover {
-  color: var(--color-dark-yellow);
+  color: #1d5c43;
   background-color: var(--color-white);
   transition: var(--animation-duration) ease-in-out;
   padding: 20px;
@@ -192,13 +192,13 @@ p {
 .home__btn {
   padding: 12px;
   border-radius: 50px;
-  background-color: var(--color-dark-yellow);
+  background-color: #f17f23;
 }
 
 .home__down {
   padding: 120px 0 0;
   font-size: var(--font-medium);
-  color: var(--color-dark-yellow);
+  color: #f17f23;
 }
 
 .home__down.visible {
@@ -227,7 +227,7 @@ p {
 
 /* Work */
 #work {
-  background-color: #090909;
+  background-color: #1d5c43;
 }
 
 .section__container {
@@ -393,7 +393,7 @@ p {
 
 /* CONNECT */
 #connect {
-  background-color: #f3aa2a;
+  background-color: #000000;
 }
 
 .connect__title,
@@ -413,7 +413,7 @@ p {
 }
 
 .connect__email span {
-  color: var(--color-black);
+  color: #1d5c43;
 }
 
 .connect__links {
