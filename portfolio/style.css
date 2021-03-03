@@ -103,9 +103,10 @@ p {
   display: flex;
   align-items: center;
 }
-.navbar__logo i {
-  font-size: 50px;
-  color: #f17f23;
+
+.navbar__logo img {
+  width: 100px;
+  height: 100px;
 }
 
 .navbar__menu {
@@ -139,7 +140,7 @@ p {
 
 /* Home */
 #home {
-  background: url();
+  background: url(/image/background.png);
   background-size: 100% 100%;
   text-align: center;
   padding: 172px 0;
@@ -149,23 +150,22 @@ p {
   background-position: 0 100px;
   background-repeat: no-repeat;
   padding-bottom: 173px;
-  background-color: var(--color-black);
 }
 
 .home__title {
   font-size: var(--font-large);
   transition: var(--animation-duration);
   padding-top: 100px;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .home__title:hover {
-  color: #f17f23;
+  color: var(--color-dark-yellow);
   transition: all var(--animation-duration);
 }
 
 .home__name {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .home__description {
@@ -175,7 +175,7 @@ p {
 }
 
 .home__description:hover {
-  text-shadow: -1px 0 #f17f23, 0 1px #f17f23, 1px 0 #f17f23, 0 -1px #f17f23;
+  text-shadow: -1px 0 #dfc043, 0 1px #dfc043, 1px 0 #dfc043, 0 -1px #dfc043;
 }
 
 .home__more {
@@ -183,7 +183,7 @@ p {
 }
 
 .home__more a:hover {
-  color: #1d5c43;
+  color: var(--color-dark-yellow);
   background-color: var(--color-white);
   transition: var(--animation-duration) ease-in-out;
   padding: 20px;
@@ -192,13 +192,13 @@ p {
 .home__btn {
   padding: 12px;
   border-radius: 50px;
-  background-color: #f17f23;
+  background-color: var(--color-dark-yellow);
 }
 
 .home__down {
   padding: 120px 0 0;
   font-size: var(--font-medium);
-  color: #f17f23;
+  color: var(--color-dark-yellow);
 }
 
 .home__down.visible {
@@ -227,7 +227,7 @@ p {
 
 /* Work */
 #work {
-  background-color: #1d5c43;
+  background-color: var(--color-dark-yellow);
 }
 
 .section__container {
@@ -247,7 +247,7 @@ p {
 .category__btn:hover {
   background-color: var(--color-white);
   color: var(--color-white);
-  background-color: #f3aa2a;
+  background-color: var(--color-dark-blue);
 }
 
 .category__btn.selected .category__count,
@@ -283,11 +283,12 @@ p {
   padding-top: 30px;
   color: var(--color-white);
   font-size: var(--font-medium);
+  color: var(--color-black);
 }
 
 .work p {
   margin-bottom: 10px;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .work__bar {
@@ -393,7 +394,7 @@ p {
 
 /* CONNECT */
 #connect {
-  background-color: #000000;
+  background-color: #0f123b;
 }
 
 .connect__title,
@@ -413,7 +414,7 @@ p {
 }
 
 .connect__email span {
-  color: #1d5c43;
+  color: var(--color-dark-yellow);
 }
 
 .connect__links {
@@ -453,7 +454,7 @@ p {
   width: 50px;
   height: 50px;
   font-size: 30px;
-  border: 2px solid #1d5c43;
+  border: 2px solid var(--color-dark-yellow);
   border-radius: 50%;
   color: var(--color-black);
   opacity: 0;
