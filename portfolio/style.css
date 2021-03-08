@@ -134,7 +134,6 @@ p {
   right: 32px;
   font-size: 24px;
   color: var(--color-dark-yellow);
-  background-color: var(--color-white);
   display: none;
 }
 
@@ -489,7 +488,7 @@ p {
   }
 
   #navbar.navbar--dark {
-    padding-bottom: 50px;
+    padding-bottom: 53px;
   }
 
   .navbar__logo img {
