@@ -12,6 +12,18 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
+// 타이핑 효과(animation)!
+const content = "I'm a junior developer."
+const text = document.querySelector(".home__description");
+let index = 0;
+function typing(){
+  text.textContent += content[index++]
+  if(index > content.length){
+    text.textContent = ""
+    index = 0;
+  };
+};
+setInterval(typing, 100);
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');

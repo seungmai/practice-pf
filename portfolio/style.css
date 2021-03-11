@@ -167,10 +167,20 @@ p {
   color: var(--color-black);
 }
 
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .home__description {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: var(--color-white);
   transition: all var(--animation-duration);
+  display: table-cell;
+  height: 32px;
+  border-right: 0.05em solid black;
+  animation: cursor 500ms ease;
 }
 
 .home__description:hover {
